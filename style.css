@@ -16,7 +16,7 @@ div{
 }
 .background{
   z-index: -1;
-  transform: scale(1.5);
+  transform: scale(-2);
 }
 h1{
   opacity:40%;
