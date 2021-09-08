@@ -120,8 +120,8 @@ h2:hover{
   /* margin: auto; */
   /* width: 50%; */
   transition: all 2s ease;
-  opacity:85%;
-  background: rgb(248, 246, 255, 0.15);
+  opacity:75%;
+  background: rgb(248, 246, 255, 0.2);
   /* transform: translate(-50%,-50%); */
   z-index:1;
 
