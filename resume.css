@@ -1,0 +1,267 @@
+*{
+  box-sizing: border-box;
+
+}
+html{
+  height: 100%;
+  font-family: "OverpassMono-Regular", sans-serif;
+  font-size: 0.85em;
+  color: rgba(96, 0, 125, 0.4);
+
+}
+h1{
+  font-size: 1.7em;
+  font-family: "OverpassMono-Bold", sans-serif;
+  color: rgb(96, 0, 125);
+}
+h2{
+  font-size: 2.9em;
+  font-family: atocha, sans-serif;
+  font-style: normal;
+  color: rgb(96, 0, 125);
+}
+h3{
+  font-size: 1.2em;
+  font-family: "OverpassMono-Bold", sans-serif;
+  color: rgba(96, 0, 125, 0.4);
+}
+strong{
+  font-family: "OverpassMono-Bold", sans-serif;
+  color: rgb(96, 0, 125);
+}
+em{
+  color: rgba(96, 0, 125, 0.6);
+}
+a{
+  color: rgba(96, 0, 125, 0.8);
+}
+a:hover{
+  color:rgb(96, 0, 125);
+  size:1.1em;
+}
+
+body
+{
+  margin: 0;
+  height: 100%;
+  animation: colorchange 15s linear 1s infinite;
+  /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 15s linear 0s infinite alternate;
+  /* Chrome and Safari */
+  /* margin-top: 6rem; */
+  /* margin-left: calc(60rem * 1882700 * var(--scale)); */
+  /* position: relative; */
+}
+
+
+@keyframes colorchange {
+  0% {
+    /* background: rgb(176, 164, 213, 0.55); */
+    background: #d9eafb;
+    /* color: cyan; */
+  }
+
+  33% {
+    /* background: rgb(204, 158, 217, 0.55); */
+    background: #eae5f4;
+    /* color: magenta; */
+  }
+
+  66% {
+    /* background: rgb(161, 181, 210, 0.55); */
+    background: #d6eaf8;
+    /* color: yellow; */
+  }
+
+  100% {
+    /* background: rgb(188, 167, 214, 0.55); */
+    background: #f7e1f6;
+    /* color: cyan; */
+  }
+}
+
+@-webkit-keyframes colorchange {
+
+  /* Safari and Chrome - necessary duplicate */
+  0% {
+    /* background: rgb(176, 164, 213, 0.55); */
+    background: #d9eafb;
+    /* color: cyan; */
+  }
+
+  33% {
+    /* background: rgb(204, 158, 217, 0.55); */
+    background: #eae5f4;
+    /* color: magenta; */
+  }
+
+  66% {
+    /* background: rgb(161, 181, 210, 0.55); */
+    background: #d6eaf8;
+    /* color: yellow; */
+  }
+
+  100% {
+    /* background: rgb(188, 167, 214, 0.55); */
+    background: #f7e1f6;
+    /* color: cyan; */
+  }
+
+}
+
+.container
+{
+  /* background: white; */
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  height: 100%;
+
+}
+.top-main{
+  /* background: white; */
+  height: 10%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content:space-between;
+  flex-direction: row;
+  margin:5px;
+}
+.bottom-main{
+  /* background: white; */
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.top-item-right{
+  background: white;
+  border-style: solid 2px;
+  border-color: black;
+  /* padding:5px; */
+  text-align: center;
+  justify-content: center;
+  width: 60vw;
+  height: 25vh;
+  margin: 5px;
+}
+.top-item-left{
+  background: white;
+  border-style: solid 2px;
+  border-color: black;
+  /* padding:5px; */
+  text-align: center;
+  justify-content: center;
+  width: 40vw;
+  height: 25vh;
+  margin: 5px;
+}
+.bottom-item-left{
+  /* background: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:25vw;
+  height:180vh;
+}
+.newpage{
+  /* position: absolute; */
+  /* top: 80px; */
+  /* right: 60px; */
+  /* width: 20px; */
+  /* height: 20px; */
+  transform: scale(2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width:9%; */
+}
+
+.bottom-item-right{
+  /* background: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:180vh;
+  width:75vw;
+}
+.column-item{
+  background: rgba(255, 255, 255, 0.3);
+  height: 90%;
+  width: 90%;
+  border-color: black solid 5px;
+  padding:35px;
+  text-align: left;
+  margin: 6px;
+  display:inline-block;
+  overflow: scroll;
+
+}
+
+.imagearticle{
+  transform: scale(1);
+  display: inline-block;
+  padding:0px;
+  margin: 0px;
+
+}
+.portrait{
+  height: 220px;
+  width: 220px;
+  padding:0px;
+  margin: 0px;
+  display: inline-block;
+  transform: scale(1);
+  opacity:90%;
+
+}
+.portrait:hover{
+  opacity: 100%;
+}
+.peter2{
+  height: 35px;
+  width: 35px;
+  opacity:90%;
+
+}
+.peter2:hover{
+  opacity: 100%;
+}
+.peter3{
+  height: 500px;
+  width: 700px;
+  opacity:90%;
+
+}
+.peter3:hover{
+  opacity: 100%;
+}
+.peter4{
+  height: 480px;
+  width: 820px;
+  opacity:90%;
+
+}
+.peter4:hover{
+  opacity: 100%;
+}
+.peter5{
+  height: 470px;
+  width: 840px;
+  opacity:90%;
+
+}
+.peter5:hover{
+  opacity: 100%;
+}
+.peter6{
+  height: 450px;
+  width: 600px;
+  opacity:90%;
+
+}
+.peter6:hover{
+  opacity: 100%;
+}
