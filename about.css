@@ -1,13 +1,82 @@
 *{
   box-sizing: border-box;
+  cursor: url(lighblue.cur), default;
   /* cursor: url(foo6.gif) 0 0, grab; */
+
 }
 head{
   display: block;
 }
-.background{
-  z-index: -1;
-  transform: scale(1.5);
+/* .background{ */
+  /* z-index: -1; */
+  /* transform: scale(1.5); */
+
+/* } */
+body{
+  animation: colorchange 15s linear 1s infinite;
+  /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 15s linear 0s infinite alternate;
+  /* Chrome and Safari */
+  /* margin-top: 6rem; */
+  /* margin-left: calc(60rem * 1882700 * var(--scale)); */
+  /* position: relative; */
+  /* z-index:1; */
+
+}
+@keyframes colorchange {
+  0% {
+    /* background: rgb(176, 164, 213, 0.55); */
+    background: #d9eafb;
+    /* color: cyan; */
+  }
+
+  33% {
+    /* background: rgb(204, 158, 217, 0.55); */
+    background: #eae5f4;
+    /* color: magenta; */
+  }
+
+  66% {
+    /* background: rgb(161, 181, 210, 0.55); */
+    background: #d6eaf8;
+    /* color: yellow; */
+  }
+
+  100% {
+    /* background: rgb(188, 167, 214, 0.55); */
+    background: #f7e1f6;
+    /* color: cyan; */
+  }
+}
+
+@-webkit-keyframes colorchange {
+
+  /* Safari and Chrome - necessary duplicate */
+  0% {
+    /* background: rgb(176, 164, 213, 0.55); */
+    background: #d9eafb;
+    /* color: cyan; */
+  }
+
+  33% {
+    /* background: rgb(204, 158, 217, 0.55); */
+    background: #eae5f4;
+    /* color: magenta; */
+  }
+
+  66% {
+    /* background: rgb(161, 181, 210, 0.55); */
+    background: #d6eaf8;
+    /* color: yellow; */
+  }
+
+  100% {
+    /* background: rgb(188, 167, 214, 0.55); */
+    background: #f7e1f6;
+    /* color: cyan; */
+  }
+
 }
 h1{
   opacity:40%;
@@ -21,6 +90,10 @@ h1{
 h1:hover{
   opacity:100%;
   color: rgb(36, 0, 180);
+
+}
+a:hover{
+  cursor: url(darkerblue.cur), default;
 }
 h2{
   opacity:40%;
@@ -53,19 +126,21 @@ p:hover{
   position: fixed;
   top: 150px;
   left: 200px;
-  width: 180px;
+  height:340px;
+  width: 450px;
   border: 3px dotted rgb(96, 0, 125, 0.2);
-  padding: 15px;
+  padding: 25px;
   margin-left: auto;
   margin-right: auto;
-  transition: all 0.5s ease;
-  opacity:85%;
-  background: rgb(248, 246, 255, 0.10);
+  /* transition: all 0.5s ease; */
+  opacity:90%;
+
+  background: rgb(248, 246, 255, 0.2);
   /* transform: translate(-50%,-50%); */
   z-index: 1;
 }
 .container:hover{
-  border: 3px dotted rgb(36, 0, 180, 0.1);
+  border: 3px dashed rgb(36, 0, 180, 0.1);
   opacity:100%;
 }
 .newpage{
@@ -74,7 +149,7 @@ p:hover{
   /* right: 60px; */
   /* width: 20px; */
   /* height: 20px; */
-  transform: scale(2);
+  /* transform: scale(2); */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -83,9 +158,10 @@ p:hover{
 
 }
 .newpage:hover{
-  transform: scale(3);
+  transform: scale(1.5);
   margin-top: 100px;
   margin-bottom:100px;
+  cursor: url(darkerblue.cur), default;
 
 }
 .container2{
@@ -97,21 +173,24 @@ p:hover{
   height:295px;
   border: 3px dotted rgb(96, 0, 125, 0.2);
   padding: 15px;
-  opacity:85%;
-  background: rgb(248, 246, 255, 0.10);
+  opacity:90%;
+  background: rgb(248, 246, 255, 0.2);
   /* transform: translate(-50%,-50%); */
   z-index: 0;
 }
 .container2:hover{
-  border: 3px dotted rgb(36, 0, 180, 0.1);
+  border: 3px dashed rgb(36, 0, 180, 0.1);
   opacity:100%;
 }
 .aboutimage{
-  transform: scale(0.28);
+  transform: scale(0.48);
   display: block;
   position: fixed;
-  bottom: -63px;
-  right: -172px;
-  opacity:75%;
 
+  padding:0px;
+
+  bottom: 90px;
+  right: 86px;
+  opacity:95%;
+  z-index:1;
 }
