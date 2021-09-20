@@ -123,6 +123,8 @@ h2:hover{
   /* height: auto; */
   border: 3px dotted rgb(96, 0, 125, 0.2);
   padding: 15px;
+  width: 170px;
+  height: 475px;
   /* margin: auto; */
   /* width: 50%; */
   transition: all 2s ease;
@@ -152,6 +154,10 @@ h2:hover{
   /* animation: fadeIn 3s ease; */
   /* animation-delay: 0s; */
   z-index: 2;
+}
+
+a:hover{
+  cursor: url(darkerblue.cur), default;
 }
 
 .newpage:hover{
