@@ -22,7 +22,6 @@ body{
   /* margin-left: calc(60rem * 1882700 * var(--scale)); */
   /* position: relative; */
   /* z-index:1; */
-overflow-x: scroll;
 }
 @keyframes colorchange {
   0% {
